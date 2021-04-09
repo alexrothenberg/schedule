@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    {{#each this.staffMembers as |staffMember|}}
+      <td class="schedule-heading">
+        <div>{{staffMember.name}}</div>
+        <div>{{staffMember.role}}</div>
+        <ul>
+          {{#each staffMember.events as |event|}}
+            <li>{{event.name}}</li>
+          {{/each}}
+        </ul>
+      </td>
+    {{/each}}
+  </tr>
+</table>
