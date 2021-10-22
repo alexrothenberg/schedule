@@ -9,28 +9,28 @@ export default class HomeRoute extends Route {
 function fakeApiCall() {
   return [
     {
-      name: 'Checkup',
+      title: 'Checkup',
       staff: {
         name: 'Katie',
         role: 'Provider',
       },
     },
     {
-      name: 'New patient visit',
+      title: 'New patient visit',
       staff: {
         name: 'Alex',
         role: 'Provider',
       },
     },
     {
-      name: 'Earache',
+      title: 'Earache',
       staff: {
         name: 'Abby',
         role: 'Health Coach',
       },
     },
     {
-      name: 'Fever',
+      title: 'Fever',
       staff: {
         name: 'Alex',
         role: 'Provider',

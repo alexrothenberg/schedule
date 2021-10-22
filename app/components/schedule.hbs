@@ -5,8 +5,8 @@
         <div>{{staffMember.name}}</div>
         <div>{{staffMember.role}}</div>
         <ul>
-          {{#each staffMember.events as |event|}}
-            <li>{{event.name}}</li>
+          {{#each staffMember.appointments as |appointment|}}
+            <li>{{appointment.title}}</li>
           {{/each}}
         </ul>
       </td>

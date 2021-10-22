@@ -7,9 +7,9 @@ module('Integration | Component | schedule', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders a column for each person', async function (assert) {
-    this.events = [];
+    this.appointments = [];
 
-    await render(hbs`<Schedule @events={{this.events}}/>`);
+    await render(hbs`<Schedule @appointments={{this.appointments}}/>`);
 
     // from the hardcoded staff members in the component
     assert.equal(findAll('td').length, 2);
